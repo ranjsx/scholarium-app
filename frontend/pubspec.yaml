@@ -1,0 +1,176 @@
+name: isHKolarium
+description: "isHKolarium is an innovative digital platform designed to streamline the management and tracking of student scholars duties. The system provides an efficient way for scholars to access their duty schedules, mark their duty completion, and for teachers to monitor and manage the scholars under their supervision."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.4.3
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.0.13 
+  bloc:
+  flutter_bloc:
+  timeline_tile:
+  http: ^1.2.2
+  font_awesome_flutter:
+  intl:
+  equatable:
+  fl_chart:
+  pdf: ^3.7.1 
+  printing: ^5.11.0
+  flutter_animate:
+  awesome_snackbar_content:
+  awesome_dialog:
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.4.1
+  path_provider: ^2.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^4.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/gif/onboarding-img-1.gif
+    - assets/gif/onboarding-img-2.gif
+    - assets/gif/onboarding-img-3.gif
+    - assets/images/image.jpg
+    - assets/images/image2.jpg
+    - assets/images/image3.jpg
+    - assets/images/image4.jpg
+    - assets/images/image5.png
+    - assets/images/image6.jpg
+    - assets/images/img1.png
+    - assets/images/img2.png
+    - assets/images/img3.png
+    - assets/images/img4.png
+    - assets/images/img5.png
+    - assets/images/img6.png
+    - assets/images/img7.png
+    - assets/images/img8.png
+    - assets/images/img9.png
+    - assets/images/img10.png
+    - assets/images/card-bg.png
+    - assets/images/test-img.png
+    - assets/images/no-schedule-img.png
+    - assets/images/no-data-img.png
+    - assets/images/change-pass-img.png
+    - assets/images/bg_img.png
+    - assets/images/login-bg.png
+    - assets/images/student_home_bg.png
+    - assets/images/test-bg.png
+    - assets/images/test2-bg.png
+    - assets/icons/profile.png
+    - assets/icons/analytics.png
+    - assets/icons/home.png
+    - assets/icons/left-arrow.png
+    - assets/icons/messenger.png
+    - assets/icons/daily-calendar.png
+    - assets/icons/calendar.png
+    - assets/icons/bell.png
+    - assets/icons/chatting.png
+    - assets/icons/message.png
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Montserrat-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Montserrat-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Montserrat-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Montserrat-Thin.ttf
+          weight: 200
+        - asset: assets/fonts/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Montserrat-ExtraBold.ttf
+          weight: 800
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Manrope-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Manrope-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Manrope-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Manrope-Thin.ttf
+          weight: 200
+        - asset: assets/fonts/Manrope-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Manrope-ExtraBold.ttf
+          weight: 800
+
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+  image: "assets/images/logo_college_2.png"
+  color: "#d4e4ed"  
+  
+  android_12:
+    color: "#d4e4ed"
+    image: "assets/images/logo_college_2.png"
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
